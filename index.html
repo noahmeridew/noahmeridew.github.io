@@ -3,14 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noah Meridew - Home</title>
-    <link rel="stylesheet" href="./stylesheet.css">
+    <title>Noah Meridew</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <h1>Noah Meridew</h1>
-    <h2>Welcome to my portfolio.</h2>
-    <h3></h3>
-    <p><a href="./Calendar/calendar.html">Calendar Application</a></p>
+
+   <header class="nav">
+    <div><button class="navItem">Resume</button></div>
+    <div><button class="navItem" onclick="smoothScroll('#contactSection');">Contact</button></div>
+   </header>
+
+   <section id="homeSection">
+    <div>
+        <h1 class="item1">Hi there!</h1>
+        <h1 class="item2">I'm <span id="name">Noah Meridew</span></h1>
+        <h1 class="item3">I am a full-stack software developer</h1>
+        <h1 class="item3"> based in Milton, Ontario. &#128205;</h1>
+    </div>
+    <div class="circle">
+        <img src="./images/headshot.jpg">
+    </div>
+   </section>
+
+    <section id="aboutSection" class="shape-divider">
+        <div class="about">
+            <h2>About Me</h2>
+            <p>I am currently studying computer programming and analysis at St. Lawrence College in Kingston. I am passionate about all things tech,
+                and I enjoy creating intelligent solutions to problems by leveraging new technology and programming languages. 
+                <br></br>
+                Although my background is in back-end development, I have been working hard to improve my front-end skills. You can check out some 
+                of my front-end work, as well as some full-stack applications I have developed below.
+                <br></br>
+                I am a Christian and a member of HOPE Presbyterian Church in Kingston, along with my amazing wife Megan. Trusting in God
+                and his saving mercies brings me great joy and comfort. I praise God for giving me the knowledge and strength I need to walk in the light in a world
+                filled with darkness.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="sep-section">
+        <svg class="separator" xmlns="http://www.w3.org/2000/svg" width="100%" height="120" viewBox="0.2 0 178 30" preserveAspectRatio="none">
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#3b90ff;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#004a99;stop-opacity:1" />
+              </linearGradient>
+            <g transform="translate(-14.514284,-115.36352)">
+                <path style="fill:#334d69;" d="m 14.74107,115.49581 h 178.02679 v 30.61607 h -29.10417 v -12.47321 h -10.58333 v -8.31548 h -13.98512 v 13.98512 h -20.41072 v -13.98512 h -8.31547 v 7.18155 h -7.18155 v 10.9613 H 85.422617 v -10.9613 H 68.791666 V 121.54343 H 51.40476 v 15.875 H 29.860117 v -9.82739 h -8.693452 v -7.55952 h -6.520089 v -4.53571 z" />
+                linear-gradient(20deg, #3b90ff, #004a99);
+                <path style="fill:url(#gradient)" d="M 14.741071,112.54762 H 192.76786 v 30.61607 H 163.66369 V 130.69048 H 153.08036 V 122.375 h -13.98512 v 13.98512 H 118.68452 V 122.375 h -8.31547 v 7.18155 h -7.18155 v 10.9613 H 85.422617 v -10.9613 H 68.791666 V 118.59524 H 51.40476 v 15.875 H 29.860118 v -9.82739 h -8.693452 v -7.55952 h -6.520089 v -4.53571 z"/>
+            </g>
+        </svg>
+    </section>
+    <section id="projectsSection">
+
+            <div class="video-box">
+                <video class="video" width="960" height="540" autoplay loop muted>
+                    <source src="./images/sign.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+            </div>
+            <div class="content-box">
+                <h2 class="title">Sign In Form</h2>
+                <p class="text">This is a sample of a sign in form</p>
+            </div>
+
+            <div class="content-box">
+                <h2 class="title">Sign In Form</h2>
+                <p class="text">This is a sample of a sign in form</p>
+            </div>
+            <div class="video-box">
+                <video class="video" width="960" height="540" autoplay loop muted>
+                    <source src="./images/calendar.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+            </div>
+    
+    </section>
+    <section class="sep-section">
+        <svg class="separator" xmlns="http://www.w3.org/2000/svg" width="100%" height="120" viewBox="0.2 0 178 30" preserveAspectRatio="none">
+            <g transform="translate(-14.514284,-115.36352)">
+                <path style="fill:#334d69;" d="m 14.74107,115.49581 h 178.02679 v 30.61607 h -29.10417 v -12.47321 h -10.58333 v -8.31548 h -13.98512 v 13.98512 h -20.41072 v -13.98512 h -8.31547 v 7.18155 h -7.18155 v 10.9613 H 85.422617 v -10.9613 H 68.791666 V 121.54343 H 51.40476 v 15.875 H 29.860117 v -9.82739 h -8.693452 v -7.55952 h -6.520089 v -4.53571 z" />
+                linear-gradient(20deg, #3b90ff, #004a99);
+                <path style="fill:#555555" d="M 14.741071,112.54762 H 192.76786 v 30.61607 H 163.66369 V 130.69048 H 153.08036 V 122.375 h -13.98512 v 13.98512 H 118.68452 V 122.375 h -8.31547 v 7.18155 h -7.18155 v 10.9613 H 85.422617 v -10.9613 H 68.791666 V 118.59524 H 51.40476 v 15.875 H 29.860118 v -9.82739 h -8.693452 v -7.55952 h -6.520089 v -4.53571 z"/>
+            </g>
+        </svg>
+    </section>
+    <section id="contactSection">
+        <div>
+            <h2 class="contact">Interested? Reach out!</h2>
+        </div>
+        <div class="container">
+            <form action="submit.php" method="POST">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+              
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
-<footer><a href="mailto:noah.meridew@gmail.com">Reach out!</a></footer>
+
 </html>
