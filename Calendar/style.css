@@ -124,12 +124,3 @@ body {
     background-color: rgba(0,0,0,0.8);
   }
 
-  #homeButton {
-    font-family: sans-serif;
-    font-size: large;
-    background-color: #bfceff;
-    color:#FFFCFF;
-    position: absolute;
-    top: 60px;
-    left: 100px;
-  }

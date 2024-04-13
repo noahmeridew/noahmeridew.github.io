@@ -10,7 +10,7 @@
 <body>
 
    <header class="nav">
-    <div><button class="navItem">Resume</button></div>
+    <a href="./images/Resume.pdf" target="_blank"><div><button class="navItem">Resume</button></div></a>
     <div><button class="navItem" onclick="smoothScroll('#contactSection');">Contact</button></div>
    </header>
 
@@ -19,7 +19,7 @@
         <h1 class="item1">Hi there!</h1>
         <h1 class="item2">I'm <span id="name">Noah Meridew</span></h1>
         <h1 class="item3">I am a full-stack software developer</h1>
-        <h1 class="item3"> based in Milton, Ontario. &#128205;</h1>
+        <h1 class="item3">based in Milton, Ontario. &#128205;</h1>
     </div>
     <div class="circle">
         <img src="./images/headshot.jpg">
@@ -27,20 +27,57 @@
    </section>
 
     <section id="aboutSection" class="shape-divider">
-        <div class="about">
-            <h2>About Me</h2>
-            <p>I am currently studying computer programming and analysis at St. Lawrence College in Kingston. I am passionate about all things tech,
-                and I enjoy creating intelligent solutions to problems by leveraging new technology and programming languages. 
-                <br></br>
-                Although my background is in back-end development, I have been working hard to improve my front-end skills. You can check out some 
-                of my front-end work, as well as some full-stack applications I have developed below.
-                <br></br>
-                I am a Christian and a member of HOPE Presbyterian Church in Kingston, along with my amazing wife Megan. Trusting in God
-                and his saving mercies brings me great joy and comfort. I praise God for giving me the knowledge and strength I need to walk in the light in a world
-                filled with darkness.
-            </p>
-        </div>
-
+        <div class="about-container">
+            <div class="about">
+                <h2>About Me</h2>
+                <p>I am currently studying computer programming and analysis at St. Lawrence College in Kingston. I am passionate about all things tech,
+                    and I enjoy creating intelligent solutions to problems by leveraging new technology and programming languages. 
+                    <br></br>
+                    Although my background is in back-end development, I have been working hard to improve my front-end skills. You can check out some 
+                    of my front-end work, as well as some full-stack applications I have developed below.
+                    <br></br>
+                    I am a Christian and a member of HOPE Presbyterian Church in Kingston, along with my amazing wife Megan. Trusting in God
+                    and his saving mercies brings me great joy and comfort. I praise God for giving me the knowledge and strength I need to walk in the light in a world
+                    filled with darkness.
+                </p>
+            </div>
+            </div>
+            <div class="stack">
+                <h1>My Tech Stack</h1>
+                <section class="web-container">
+                    <div>
+                        <img class="html" src="./images/html.png" alt="Web Dev Languages">
+                    </div>
+                    <div>
+                        <img class="css" src="./images/css.png" alt="Web Dev Languages">
+                    </div>
+                    <div>
+                        <img class="js" src="./images/js.png" alt="Web Dev Languages">
+                    </div>
+                </section>
+                <section class="web-container">
+                    <div>
+                        <img class="java" src="./images/java.png" alt="Java">
+                    </div>
+                    <div>
+                        <img class="cpp" src="./images/Cpp.png" alt="C++">
+                    </div>
+                    <div>
+                        <img class="mongo" src="./images/mongo.png" alt="MongoDB">
+                    </div>
+                </section>
+                <section class="web-container">
+                    <div>
+                        <img class="sql" src="./images/sql.png" alt="MySQL">
+                    </div>
+                    <div>
+                        <img class="node" src="./images/node.png" alt="Node.js">
+                    </div>
+                    <div><h4 class="learning">Currently learning Vue.js</h4></div>
+                </section>
+                
+            </div>
+        
     </section>
 
     <section class="sep-section">
@@ -56,28 +93,48 @@
             </g>
         </svg>
     </section>
-    <section id="projectsSection">
-
-            <div class="video-box">
+    
+<section id="projectsSection">
+    <div><h2 class="projects">My Projects</h2></div>
+    <div></div>
+            <a href="./SignDemo/index.html" target="_blank"><div class="video-box">
                 <video class="video" width="960" height="540" autoplay loop muted>
                     <source src="./images/sign.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
-            </div>
+            </div></a>
             <div class="content-box">
                 <h2 class="title">Sign In Form</h2>
-                <p class="text">This is a sample of a sign in form</p>
+                <p class="text">This is a sign in / registration form that I designed with HTML, CSS and a few lines of JavaScript. 
+                    This is an example of some of the visually pleasing and user-friendly design that I aim for in my front-end work.</p>
             </div>
 
             <div class="content-box">
-                <h2 class="title">Sign In Form</h2>
-                <p class="text">This is a sample of a sign in form</p>
+                <h2 class="title">Calendar Web App</h2>
+                <p class="text">This is a demo of a web application that I built which allows the user to create events that get stored
+                    in a MySQL database. This was my first full-stack application, and pushed me to learn about creating database connections, while designing
+                    a fluent and functional user interface.
+                </p>
             </div>
-            <div class="video-box">
+            <a href="./Calendar/calendar.html" target="_blank"><div class="video-box">
                 <video class="video" width="960" height="540" autoplay loop muted>
                     <source src="./images/calendar.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
+            </div></a>
+
+            <div class="video-box">
+                <video class="video" width="960" height="540" autoplay loop muted>
+                    <source src="./images/scry.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+            </div>
+            <div class="content-box">
+                <h2 class="title">Card Prices Script</h2>
+                <p class="text">My brother collects Magic The Gathering cards, and wanted to have updated prices for his collection on his Google spreadsheet.
+                    I wrote a script using Google's Apps Script tool that makes an API call to the Scryfall database to retrieve the most recent prices
+                    for his cards, and updates his spreadsheet. <span id="rare">*Some of his cards are so rare that Scryfall doesn't have a price for them!*</span>
+                </p>
             </div>
     
     </section>
@@ -91,22 +148,31 @@
         </svg>
     </section>
     <section id="contactSection">
-        <div>
-            <h2 class="contact">Interested? Reach out!</h2>
-        </div>
-        <div class="container">
-            <form action="submit.php" method="POST">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required>
-              
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required>
-              
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" required></textarea>
-              
-              <button type="submit">Submit</button>
+        <div class="form-container">
+            <div>
+                <h2 class="contact">Interested?</h2>
+                <h1 class="reach">Reach out!</h1>
+            </div>
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="f8074960-e2bd-4e07-881f-af9263f42b40">
+                <label for="name" id="label-1">Name:</label>
+                <input type="text" id="your-name" name="name" required>
+                
+                <label for="email" id="label-2">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message" id="label-3">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
             </form>
+          </div>
+          <div class="side-text">
+            <h1>My Socials</h1>
+            <a href="https://www.linkedin.com/in/noah-meridew" target="_blank"><img class="logos" src="./images/linkedin.png" alt="" width="75"></a>
+            <a href="https://www.facebook.com/noah.meridew.9" target="_blank"><img class="logos" src="./images/Facebook.png" alt="" width="75"></a>
+            <button id="top" onclick="smoothScroll('.nav');">Back to top</button>
           </div>
     </section>
 

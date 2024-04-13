@@ -8,7 +8,6 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 body {
@@ -25,6 +24,7 @@ body {
     height: 60px;
     margin-inline: auto;
     font-size: 25px;
+    padding: 20px;
 }
 
 .nav .navItem {
@@ -36,8 +36,9 @@ body {
     font-weight: 500;
     background-color: transparent;
     margin-inline: 4rem;
-    height: 38px;
+    height: 40px;
     transition: 0.15s;
+    padding-inline: 10px;
 }
 
 .nav .navItem:hover {
@@ -94,8 +95,8 @@ body {
 }
 
 .circle img {
-    max-width: 100%; /* Ensures the image maintains its aspect ratio */
-    min-width: 100%; /* Ensures the image maintains its aspect ratio linear-gradient(35deg, #12c2e9, #c471ed, #f64f59); */
+    max-width: 100%;
+    min-width: 100%;
     height: 310px;
     object-fit: cover;
 }
@@ -154,9 +155,95 @@ body {
     min-width: 100%;
     background: linear-gradient(to right, #3b90ff, #004a99);
     margin: 0;
-    
+    display: flex;
+    padding-top: 15em;
 }
 
+.about-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+.stack {
+    font-size: 2em;
+    width: 80%;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-200px);
+    background-color: rgba(47, 0, 100, 0.4);
+    padding: 1em;
+    border-radius: 25px;
+    border: 3px solid rgb(37, 37, 37);
+}
+
+.web-container {
+    display: flex;
+}
+
+.html {
+    display: flex;
+    width: 200px;
+    padding-top: 2em;
+    max-width: 100%;
+    height: auto;
+}
+
+.css {
+    display: flex;
+    width: 125px;
+    max-width: 100%;
+    height: auto;
+    padding-top: 2.3em;
+    padding-inline: 1.3em;
+}
+
+.js {
+    display: flex;
+    width: 125px;
+    max-width: 100%;
+    height: auto;
+    padding-top: 3.3em;
+    padding-inline: 1em;
+}
+
+.java {
+    width: 220px;
+    transform: translateX(-10px);
+    padding-top: 0.3em;
+}
+
+.cpp {
+    width: 150px;
+    padding-top: 1em;
+    padding-left: 0.5em;
+}
+
+.mongo {
+    width: 200px;
+    padding-top: 0.3em;
+    padding-left: 1em;
+}
+
+.sql {
+    width: 160px;
+    padding-top: 0.5em;
+    padding-left: 1em;
+}
+
+.node {
+    padding-left: 0.5em;
+}
+
+.learning {
+    padding-top: 2.3em;
+    padding-left: 1em;
+    font-size: 0.8em;
+    font-family: 'Quicksand-Bold';
+    text-align: center;
+}
 
 .about {
     font-size: 3em;
@@ -164,10 +251,9 @@ body {
     color: #FAF9F6;
     display: flex;
     flex-direction: column;
-    padding-inline: 3em;
-    width: 50%;
-    padding-top: 5em;
+    padding-left: 3em;
     padding-bottom: 1em;
+    width: 50%;
     margin: 0;
 }
 
@@ -184,6 +270,14 @@ body {
     box-sizing: border-box;
     background: linear-gradient(180deg, #333, #555);
     padding-block: 10em;
+}
+
+.projects {
+    margin-block: 1em;
+    font-size: 4em;
+    padding-left: 2.1em;
+    font-family: 'Montserrat';
+    color: #FAF9F6;
 }
 
 .sep-section {
@@ -225,20 +319,51 @@ body {
     line-height: 2;
 }
 
+#rare {
+    font-weight: 800;
+}
+
 #contactSection {
     height: 700px;
     padding-top: 10em;
-    max-width: 400px;
+    padding-bottom: 6em;
+    max-width: 1200px;
     margin: 0 auto;
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .contact {
-    font-size: 3em;
+    font-size: 4em;
     font-family: 'Montserrat';
     color: #333;
-    padding-top: 2em;
-    display: flex;
-    justify-content: center;
+    padding-top: 1em;
+}
+
+.reach {
+    font-size: 2em;
+    font-family: 'Montserrat';
+    padding-bottom: 1em;
+}
+
+.side-text {
+    margin-top: 10em;
+    padding-inline: 7em;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.logos {
+    padding-block: 1em;
+    padding-right: 0.3em;
+    transition: 300ms ease;
 }
 
 #contactSection form {
@@ -248,21 +373,52 @@ body {
   
 #contactSection label {
     font-weight: bold;
+    position: relative;
+    padding-top: 10px;
 }
   
-#contactSection input, textarea {
-    width: 100%;
+#contactSection input {
+    min-width: 500px;
     padding: 8px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+#contactSection textarea {
+    min-width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    padding: 8px;
+    resize: none;
 }
   
 #contactSection button {
-    background-color: #4CAF50;
+    max-width: 420px;
+    background-color: #8da7ff;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 30px;
+    margin-top: 1em;
     border: none;
     cursor: pointer;
+    transition: 300ms ease;
 }
   
 #contactSection button:hover {
-    background-color: #45a049;
+    background-color: #678bff;
+    transform: translateY(5px);
+}
+
+.logos:hover {
+    transform: scale(0.9);
+}
+
+#top {
+    display: flex;
+
 }
