@@ -272,6 +272,38 @@ body {
     padding-block: 10em;
 }
 
+[data-reveal="left"] { clip-path: inset(0 100% 0 0); }
+
+[data-reveal="left"].revealed {
+    animation: reveal-left 1.2s cubic-bezier(0.17, 0.97, 0.38, 1)
+    forwards 300ms;
+}
+
+@keyframes reveal-left {
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+[data-reveal="right"] { clip-path: inset(0 0 0 100%); }
+
+[data-reveal="right"].revealed {
+    animation: reveal-right 1.2s cubic-bezier(0.17, 0.97, 0.38, 1)
+    forwards 300ms;
+}
+
+@keyframes reveal-right {
+    0% {
+        clip-path: inset(0 0 0 100%);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
 .projects {
     margin-block: 1em;
     font-size: 4em;
