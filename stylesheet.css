@@ -173,7 +173,7 @@ body {
     display: flex;
     flex-direction: column;
     transform: translateX(-200px);
-    background-color: rgba(47, 0, 100, 0.4);
+    background-color: rgba(47, 0, 100, 0.37);
     padding: 1em;
     border-radius: 25px;
     border: 3px solid rgb(37, 37, 37);
@@ -197,7 +197,7 @@ body {
     max-width: 100%;
     height: auto;
     padding-top: 2.3em;
-    padding-inline: 1.3em;
+    padding-inline: 1.4em;
 }
 
 .js {
@@ -206,7 +206,7 @@ body {
     max-width: 100%;
     height: auto;
     padding-top: 3.3em;
-    padding-inline: 1em;
+    padding-left: 1.3em;
 }
 
 .java {
@@ -235,6 +235,12 @@ body {
 
 .node {
     padding-left: 0.5em;
+}
+
+.vue {
+    width: 160px;
+    padding-top: 1em;
+    padding-left: 1em;
 }
 
 .learning {
