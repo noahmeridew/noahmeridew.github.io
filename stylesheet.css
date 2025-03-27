@@ -17,7 +17,24 @@ body {
     overflow-x: hidden;
 }
 
+.content, .shape-divider {
+    display: none;
+}
 
+.mobile-message {
+    display: block;
+    margin:10%;
+}
+
+/* Show normal content and dividers only on larger screens */
+@media (min-width: 768px) {
+    .content, .shape-divider {
+      display: block;
+    }
+    .mobile-message {
+      display: none;
+    }
+  }
 
 .nav {
     display: flex;
